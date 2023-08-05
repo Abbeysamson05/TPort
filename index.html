@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="stylequery.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css"
@@ -12,6 +13,11 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap"
+      rel="stylesheet"
     />
   </head>
   <body>
@@ -29,64 +35,67 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-        <ul class="navbar-nav mt-2 mt-lg-0 w-100 w-full">
-          <form class="form-inline my-2 my-lg-0 me-auto w-100">
+        <ul class="navbar-nav mt-2 mt-lg-0 w-100 w-full px-3">
+          <form class="form-inline my-2 my-lg-0 me-auto">
             <input
-              class="form-control mr-sm-2"
+              class="form-control mr-sm-2 p-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
           </form>
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
+
+          <li class="nav-item">
+            <a class="nav-link" href="review.html">Review</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Review</a>
+            <a class="nav-link" href="course.html">Courses</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Courses</a>
+            <a class="nav-link" href="blog.html">Blog</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="help.html">Help</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Help</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Login</a>
+            <a class="nav-link" href="login.html">Login</a>
           </li>
           <li class="nav-item">
             <button class="btn btn-outline-warning me-2">
-              <a class="nav-link" href="#">Get started</a>
-            </button>
-          </li>
-          <li class="nav-item">
-            <button class="btn btn-warning">
-              <a class="nav-link" href="#">Enroll</a>
+              <a class="nav-link" href="getstarted.html">Get started</a>
             </button>
           </li>
         </ul>
       </div>
     </nav>
-    <section>
-      <h1>Code your Next Project.</h1>
-      <h1>By Yourself.</h1>
-      <h6>
-        Learn everything you need to write, deploy, and improve software
-        applications. Step-by-Step.
-      </h6>
-      <button class="btn btn-primary">Join now</button>
-      <button class="btn btn-outline-primary">Login</button>
+    <section class="hero-section text-black">
+      <div>
+        <h1 class="display-4 fw-bolder">Code your Next Project.</h1>
+        <h1 class="display-4 fw-bolder mb-4">By Yourself.</h1>
+        <p class="mb-4">
+          Learn everything you need to write, deploy, and improve software
+          applications. Step-by-Step.
+        </p>
+        <a href="getstarted.html">
+          <button class="btn btn-primary p-3 fw-bold">Join now</button>
+        </a>
+        <a href="login.html">
+          <button class="btn btn-outline-primary p-3 fw-bold">Login</button>
+        </a>
+      </div>
     </section>
     <section class="container">
-      <h1 class="text-center">Launch your business on your own.</h1>
+      <h1 class="text-center display-6 fw-bold">
+        Launch your business on your own.
+      </h1>
       <h6 class="font-weight-bold text-center">
         It's as simple as a decision to get started
       </h6>
-
+      <div class="d-flex justify-content-center">
+        <video controls class="landing-page__video">
+          <source src="/public/video.mp4" type="video/mp4" />
+        </video>
+      </div>
       <h4>Never Coded Before? Not a problem.</h4>
       <p>
         From walking to reading, every skill takes time to acquire. Coding
@@ -111,7 +120,7 @@
         Imagine having an incredible idea but you don't have the skills to get
         it started?
       </p>
-      <h4>1. Top Down, Not Bottom Up</h4>
+      <h4>Top Down, Not Bottom Up</h4>
       <p>
         Our approach is simple and the opposite of how school typically works.
       </p>
@@ -153,11 +162,12 @@
         Can you read it? Sure you can. Do you understand it? Not yet... But you
         will.
       </p>
-      <h4>FAQ Doubters Read This</h4>
+      <h5 class="fw-bold my-4">FAQ Doubters Read This</h5>
+
       <ol class="list-unstyled">
         <li>
           <h4>
-            2. I am not technical at all, are you sure I should enroll to Coding
+            1. I am not technical at all, are you sure I should enroll to Coding
             For Entrepreneurs?
           </h4>
           <p>
@@ -178,7 +188,7 @@
           <p>So yes. You should <a href="#">enroll</a></p>
         </li>
         <li>
-          <h4>3. Why don't I just find a partner or hire a developer?</h4>
+          <h4>2. Why don't I just find a partner or hire a developer?</h4>
           <p>
             Coding software is about breaking your ideas into rules or steps
             that a computer can follow. If you don't know how to write these
@@ -197,7 +207,7 @@
           </p>
         </li>
         <li>
-          <h4>Why don't I just use Wordpress or another platform?</h4>
+          <h4>3. Why don't I just use Wordpress or another platform?</h4>
           <p>
             This is like asking a chef why he doesn't follow someone else's
             recipe. The other recipe might be fantastic... but it's still
@@ -223,7 +233,6 @@
           <span>Get connected with us on social networks:</span>
         </div>
 
-        <!-- Right -->
         <div>
           <a href="" class="me-4 link-secondary">
             <i class="fab fa-facebook-f"></i>
@@ -332,9 +341,6 @@
         style="background-color: rgba(0, 0, 0, 0.025)"
       >
         © 2021 Copyright:
-        <a class="text-reset fw-bold" href="https://mdbootstrap.com/"
-          >MDBootstrap.com</a
-        >
       </div>
     </footer>
 
